@@ -1,0 +1,17 @@
+
+<h1> These are the invited people:</h1>
+
+<ul>
+    {% if names%}
+        {% for entry in names %}
+        <l1>
+            {{entry}} <br/>
+        </l1>
+        {% endfor %}
+
+    {%else%}
+        <h3>No one in this radius</h3>
+
+    {%endif%}
+
+</ul>
